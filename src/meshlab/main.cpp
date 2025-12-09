@@ -57,6 +57,16 @@ int main(int argc, char *argv[])
 	}
 
 	MeshLabApplication app(argc, argv);
+
+	// ---------------- 加载中文翻译 ----------------
+	QTranslator translator;
+	if (translator.load("meshlab_zh_CN.qm", qApp->applicationDirPath())) {
+		app.installTranslator(&translator);
+	} else {
+		qDebug() << "中文翻译加载失败：未找到 meshlab_zh_CN.qm";
+	}
+	// ------------------------------------------------
+
 	std::setlocale(LC_ALL, "C");
 	QLocale::setDefault(QLocale::C);
 	QCoreApplication::setOrganizationName(MeshLabApplication::organization());

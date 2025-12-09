@@ -48,6 +48,7 @@
 #include <QSplitter>
 #include <QProgressBar>
 #include <QNetworkAccessManager>
+#include <QTranslator>
 
 // Note the number of recent files is limited by the number of 
 // shortcuts for quick opening 1..9
