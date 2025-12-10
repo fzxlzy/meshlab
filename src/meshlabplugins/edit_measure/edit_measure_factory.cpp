@@ -26,7 +26,7 @@
 
 EditMeasureFactory::EditMeasureFactory()
 {
-	editMeasure = new QAction(QIcon(":/images/icon_measure.png"),"Measuring Tool", this);
+	editMeasure = new QAction(QIcon(":/images/icon_measure.png"),tr("Measuring Tool"), this);
 
 	actionList.push_back(editMeasure);
 	
@@ -36,7 +36,7 @@ EditMeasureFactory::EditMeasureFactory()
 
 QString EditMeasureFactory::pluginName() const
 {
-	return "EditMeasure";
+	return tr("EditMeasure");
 }
 
 //get the edit tool for the given action

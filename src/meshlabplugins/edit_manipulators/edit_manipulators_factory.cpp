@@ -26,7 +26,7 @@
 
 EditManipulatorsFactory::EditManipulatorsFactory()
 {
-	editManipulators = new QAction(QIcon(":/images/icon_manipulators.png"),"Manipulators Tool", this);
+	editManipulators = new QAction(QIcon(":/images/icon_manipulators.png"),tr("Manipulators Tool"), this);
 
 	actionList.push_back(editManipulators);
 	
@@ -36,7 +36,7 @@ EditManipulatorsFactory::EditManipulatorsFactory()
 
 QString EditManipulatorsFactory::pluginName() const
 {
-	return "EditManipulators";
+	return tr("EditManipulators");
 }
 
 //get the edit tool for the given action

@@ -26,7 +26,7 @@
 
 EditAlignFactory::EditAlignFactory()
 {
-	editAlign = new QAction(QIcon(":/images/icon_align.png"), "Align", this);
+	editAlign = new QAction(QIcon(":/images/icon_align.png"), tr("Align"), this);
 
 	actionList.push_back(editAlign);
 	
@@ -36,7 +36,7 @@ EditAlignFactory::EditAlignFactory()
 
 QString EditAlignFactory::pluginName() const
 {
-	return "EditAlign";
+	return tr("EditAlign");
 }
 
 //get the edit tool for the given action
