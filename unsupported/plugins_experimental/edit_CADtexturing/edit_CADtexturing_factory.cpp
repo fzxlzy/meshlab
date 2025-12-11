@@ -26,7 +26,7 @@
 
 CADtexturingEditFactory::CADtexturingEditFactory()
 {
-	editCADtexturing = new QAction(QIcon(":/images/icon_info.png"),"Get Info", this);
+	editCADtexturing = new QAction(QIcon(":/images/icon_info.png"),tr("Get Info"), this);
 	
 	actionList << editCADtexturing;
 	

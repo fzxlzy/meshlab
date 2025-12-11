@@ -26,7 +26,7 @@
 
 EditMutualCorrsFactory::EditMutualCorrsFactory()
 {
-	editMutualCorrs = new QAction(QIcon(":/images/icon_mutualcorrs.png"),"Raster alignment", this);
+	editMutualCorrs = new QAction(QIcon(":/images/icon_mutualcorrs.png"),tr("Raster alignment"), this);
 	
 	actionList.push_back(editMutualCorrs);
 	
@@ -36,7 +36,7 @@ EditMutualCorrsFactory::EditMutualCorrsFactory()
 
 QString EditMutualCorrsFactory::pluginName() const
 {
-	return "EditMutualCorrs";
+	return tr("EditMutualCorrs");
 }
 
 //get the edit tool for the given action

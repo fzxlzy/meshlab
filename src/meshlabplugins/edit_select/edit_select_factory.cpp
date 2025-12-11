@@ -26,10 +26,10 @@
 
 EditSelectFactory::EditSelectFactory()
 {
-	editSelect = new QAction(QIcon(":/images/select_face.png"),"Select Faces in a rectangular region", this);
-	editSelectConnected = new QAction(QIcon(":/images/select_face_connected.png"),"Select Connected Components in a region", this);
-	editSelectVert = new QAction(QIcon(":/images/select_vertex.png"),"Select Vertices", this);
-	editSelectArea = new QAction(QIcon(":/images/select_area.png"), "Select Faces/Vertices inside polyline area", this);
+	editSelect = new QAction(QIcon(":/images/select_face.png"),tr("Select Faces in a rectangular region"), this);
+	editSelectConnected = new QAction(QIcon(":/images/select_face_connected.png"),tr("Select Connected Components in a region"), this);
+	editSelectVert = new QAction(QIcon(":/images/select_vertex.png"),tr("Select Vertices"), this);
+	editSelectArea = new QAction(QIcon(":/images/select_area.png"), tr("Select Faces/Vertices inside polyline area"), this);
 
 	actionList.push_back(editSelectVert);
 	actionList.push_back(editSelect);
@@ -42,7 +42,7 @@ EditSelectFactory::EditSelectFactory()
 
 QString EditSelectFactory::pluginName() const
 {
-	return "EditSelect";
+	return tr("EditSelect");
 }
 
 //get the edit tool for the given action

@@ -26,7 +26,7 @@
 
 EditPaintFactory::EditPaintFactory()
 {
-	editPaint = new QAction(QIcon(":/images/paintbrush-22.png"), "Z-painting", this);
+	editPaint = new QAction(QIcon(":/images/paintbrush-22.png"), tr("Z-painting"), this);
 
 	actionList.push_back(editPaint);
 	
@@ -36,7 +36,7 @@ EditPaintFactory::EditPaintFactory()
 
 QString EditPaintFactory::pluginName() const
 {
-	return "EditPaint";
+	return tr("EditPaint");
 }
 
 //get the edit tool for the given action

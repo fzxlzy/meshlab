@@ -27,7 +27,7 @@
 QualityMapperFactory::QualityMapperFactory()
 {
 	//setting-up plugin
-	editQuality = new QAction(QIcon(":/images/qualitymapper.png"),"Quality Mapper", this);
+	editQuality = new QAction(QIcon(":/images/qualitymapper.png"),tr("Quality Mapper"), this);
 	
 	actionList.push_back(editQuality);
 	
@@ -37,7 +37,7 @@ QualityMapperFactory::QualityMapperFactory()
 
 QString QualityMapperFactory::pluginName() const
 {
-	return "EditQuality";
+	return tr("EditQuality");
 }
 
 //get the edit tool for the given action

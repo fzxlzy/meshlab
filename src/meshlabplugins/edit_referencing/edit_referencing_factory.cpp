@@ -26,7 +26,7 @@
 
 EditReferencingFactory::EditReferencingFactory()
 {
-	editReferencing = new QAction(QIcon(":/images/icon_referencing.png"),"Reference scene", this);
+	editReferencing = new QAction(QIcon(":/images/icon_referencing.png"),tr("Reference scene"), this);
 	
 	actionList.push_back(editReferencing);
 	
@@ -36,7 +36,7 @@ EditReferencingFactory::EditReferencingFactory()
 
 QString EditReferencingFactory::pluginName() const
 {
-	return "EditReferencing";
+	return tr("EditReferencing");
 }
 
 //get the edit tool for the given action

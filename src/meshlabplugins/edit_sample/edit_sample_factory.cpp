@@ -26,7 +26,7 @@
 
 SampleEditFactory::SampleEditFactory()
 {
-	editSample = new QAction(QIcon(":/images/icon_info.png"),"Get Info", this);
+	editSample = new QAction(QIcon(":/images/icon_info.png"),tr("Get Info"), this);
 	
 	actionList.push_back(editSample);
 	
@@ -36,7 +36,7 @@ SampleEditFactory::SampleEditFactory()
 
 QString SampleEditFactory::pluginName() const
 {
-	return "EditSample";
+	return tr("EditSample");
 }
 
 //get the edit tool for the given action

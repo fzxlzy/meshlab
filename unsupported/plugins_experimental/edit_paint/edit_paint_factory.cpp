@@ -26,7 +26,7 @@
 
 EditPaintFactory::EditPaintFactory()
 {
-	editPaint = new QAction(QIcon(":/images/paintbrush-22.png"), "Z-painting", this);
+	editPaint = new QAction(QIcon(":/images/paintbrush-22.png"), tr("Z-painting"), this);
 
 	actionList << editPaint;
 	

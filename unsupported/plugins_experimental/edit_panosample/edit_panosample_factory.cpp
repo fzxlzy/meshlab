@@ -26,7 +26,7 @@
 
 EditPanosampleFactory::EditPanosampleFactory()
 {
-	editPanosample = new QAction(QIcon(":/images/paintbrush-22.png"), "Z-painting", this);
+	editPanosample = new QAction(QIcon(":/images/paintbrush-22.png"), tr("Z-painting"), this);
 
 	actionList << editPanosample;
 	

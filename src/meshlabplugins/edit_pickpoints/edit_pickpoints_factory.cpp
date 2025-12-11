@@ -26,7 +26,7 @@
 
 EditPickPointsFactory::EditPickPointsFactory()
 {
-	editPickPoints = new QAction(QIcon(":/images/pickpoints.png"), "PickPoints", this);
+	editPickPoints = new QAction(QIcon(":/images/pickpoints.png"), tr("PickPoints"), this);
 
 	actionList.push_back(editPickPoints);
 	
@@ -36,7 +36,7 @@ EditPickPointsFactory::EditPickPointsFactory()
 
 QString EditPickPointsFactory::pluginName() const
 {
-	return "EditPickPoints";
+	return tr("EditPickPoints");
 }
 
 //get the edit tool for the given action
